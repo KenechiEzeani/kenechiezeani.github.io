@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Kenechi Ezeani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="brand" href="index.html">Kenechi Ezeani</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Contact</h1>
+
+  <h2>Direct</h2>
+  <p>Email: <a href="mailto:kenechik06@gmail.com">kenechik06@gmail.com</a></p>
+  <p>Instagram: <a href="#" class="placeholder-link">[@yourhandle — add link]</a></p>
+
+  <h2>Or send a message</h2>
+  <!--
+    Phase 3 note: replace the form "action" below with your real Formspree
+    endpoint (or another form backend) once you've created one at formspree.io.
+  -->
+  <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your email</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</main>
+
+<footer>
+  &copy; 2026 Kenechi Ezeani
+</footer>
+
+</body>
+</html>
