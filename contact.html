@@ -4,50 +4,82 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Kenechi Ezeani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="brand" href="index.html">Kenechi Ezeani</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html" class="active">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Kenechi Ezeani<small>Cybersecurity &amp; Media</small></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h1>Contact</h1>
+<section class="block">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Contact</h2>
+      <p>Whether it's about an internship, a project, or video work — reach out.</p>
+    </div>
 
-  <h2>Direct</h2>
-  <p>Email: <a href="mailto:kenechik06@gmail.com">kenechik06@gmail.com</a></p>
-  <p>Instagram: <a href="#" class="placeholder-link">[@yourhandle — add link]</a></p>
+    <div class="contact-layout">
+      <div>
+        <div class="contact-method">
+          <div class="contact-icon">@</div>
+          <div>
+            <p class="label">Email</p>
+            <p class="value"><a href="mailto:kenechik06@gmail.com">kenechik06@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-method">
+          <div class="contact-icon">IG</div>
+          <div>
+            <p class="label">Instagram</p>
+            <p class="value"><a href="#">@yourhandle — add link</a></p>
+          </div>
+        </div>
+      </div>
 
-  <h2>Or send a message</h2>
-  <!--
-    Phase 3 note: replace the form "action" below with your real Formspree
-    endpoint (or another form backend) once you've created one at formspree.io.
-  -->
-  <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+      <!--
+        Phase 3 note: replace the form "action" below with your real Formspree
+        endpoint (or another form backend) once you've created one at formspree.io.
+      -->
+      <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="email">Your email</label>
-    <input type="email" id="email" name="_replyto" required>
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="_replyto" required>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-    <button type="submit">Send</button>
-  </form>
-</main>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-<footer>
-  &copy; 2026 Kenechi Ezeani
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kenechi Ezeani</p>
+    <div class="footer-links">
+      <a href="mailto:kenechik06@gmail.com">Email</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
 </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>

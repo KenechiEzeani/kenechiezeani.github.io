@@ -4,51 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Kenechi Ezeani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="brand" href="index.html">Kenechi Ezeani</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html" class="active">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Kenechi Ezeani<small>Cybersecurity &amp; Media</small></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h1>Projects</h1>
+<section class="block">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Projects</h2>
+      <p>A mix of creative video work and technical/security projects.</p>
+    </div>
 
-  <div class="card">
-    <h2>KennVisuals — Brand &amp; Agency Work</h2>
-    <p class="placeholder">[Project description, images/video, and links go here]</p>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb">Add thumbnail image</div>
+        <span class="tag">Video</span>
+        <h3>Coffee Shop Promo Video</h3>
+        <p>[Placeholder] Shot and edited a short promotional video for a local coffee
+        shop — handled filming on location and the full edit.</p>
+        <a class="card-link" href="#">Watch the video →</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">Add thumbnail image</div>
+        <span class="tag">Motion Design</span>
+        <h3>"Outskirts" Music Visualizer</h3>
+        <p>[Placeholder] An After Effects visualizer for an artist, mixing rotobrushed
+        cutout footage with textured/collage backgrounds.</p>
+        <a class="card-link" href="#">Watch the video →</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">Add thumbnail image</div>
+        <span class="tag">Brand</span>
+        <h3>KennVisuals — Brand &amp; Agency Work</h3>
+        <p>[Placeholder] Creative direction, branding, and content built around my
+        video production page.</p>
+        <a class="card-link" href="#">See the work →</a>
+      </div>
+
+      <div class="card">
+        <div class="thumb">Coming soon</div>
+        <span class="tag">Security</span>
+        <h3>Home Lab Build</h3>
+        <p>[Placeholder] Write-up of my home lab setup for hands-on network security
+        and ethical hacking practice — coming as it develops.</p>
+        <a class="card-link" href="#">Read more →</a>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <h2>"Outskirts" — Music Visualizer</h2>
-    <p class="placeholder">
-      [After Effects visualizer mixing rotobrushed cutout footage with textured/collage
-      backgrounds — description, stills, and video embed go here]
-    </p>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kenechi Ezeani</p>
+    <div class="footer-links">
+      <a href="mailto:kenechik06@gmail.com">Email</a>
+      <a href="#">Instagram</a>
+    </div>
   </div>
-
-  <div class="card">
-    <h2>Coffee Shop Promo Video</h2>
-    <p class="placeholder">[Shot &amp; edited promo video — description and embed go here]</p>
-  </div>
-
-  <div class="card">
-    <h2>Cybersecurity / Technical Projects</h2>
-    <p class="placeholder">[Home lab build, Security+ study projects, or CTF write-ups go here]</p>
-  </div>
-</main>
-
-<footer>
-  &copy; 2026 Kenechi Ezeani
 </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>

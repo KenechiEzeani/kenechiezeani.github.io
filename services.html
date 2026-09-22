@@ -4,44 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — Kenechi Ezeani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="brand" href="index.html">Kenechi Ezeani</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Kenechi Ezeani<small>Cybersecurity &amp; Media</small></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h1>Services</h1>
-  <p class="tagline">Video work available for hire, alongside school.</p>
+<section class="block">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Services</h2>
+      <p>Video work available for hire, alongside school. Reach out for current
+      availability and rates.</p>
+    </div>
 
-  <div class="card">
-    <h2>Video Editing</h2>
-    <p class="placeholder">[Description, turnaround time, pricing/starting-at info]</p>
+    <div class="grid">
+      <div class="card service-card">
+        <h3>Video Editing</h3>
+        <span class="price">Starting at $[X] — add your rate</span>
+        <p>[Placeholder] Turning raw footage into a polished final video — color,
+        pacing, sound, and graphics as needed. Typical turnaround: [X days].</p>
+        <a class="card-link" href="contact.html">Inquire →</a>
+      </div>
+
+      <div class="card service-card">
+        <h3>Promo &amp; Commercial Videos</h3>
+        <span class="price">Starting at $[X] — add your rate</span>
+        <p>[Placeholder] Shooting and editing promotional or ad-style videos for
+        local businesses, from concept to final cut.</p>
+        <a class="card-link" href="contact.html">Inquire →</a>
+      </div>
+
+      <div class="card service-card">
+        <h3>Event &amp; Social Content Videography</h3>
+        <span class="price">Starting at $[X] — add your rate</span>
+        <p>[Placeholder] Filming events, vlogs, or short-form content built for
+        Instagram/TikTok/YouTube.</p>
+        <a class="card-link" href="contact.html">Inquire →</a>
+      </div>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <h2>Promo &amp; Commercial Videos</h2>
-    <p class="placeholder">[Description for local businesses, sample rates]</p>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kenechi Ezeani</p>
+    <div class="footer-links">
+      <a href="mailto:kenechik06@gmail.com">Email</a>
+      <a href="#">Instagram</a>
+    </div>
   </div>
-
-  <div class="card">
-    <h2>Event &amp; Social Content Videography</h2>
-    <p class="placeholder">[Description for events/vlogs/short-form content]</p>
-  </div>
-</main>
-
-<footer>
-  &copy; 2026 Kenechi Ezeani
 </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>

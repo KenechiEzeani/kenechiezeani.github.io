@@ -3,44 +3,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kenechi Ezeani</title>
+<title>Kenechi Ezeani — Cybersecurity Student &amp; Visual Storyteller</title>
+<meta name="description" content="Portfolio of Kenechi Ezeani — cybersecurity student pursuing Security+ and IT internships, with video production work on the side.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="brand" href="index.html">Kenechi Ezeani</a>
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Kenechi Ezeani<small>Cybersecurity &amp; Media</small></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="primary-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h1>Kenechi Ezeani</h1>
-  <p class="tagline">Cybersecurity student &amp; visual storyteller — building a career in IT/security while creating video work on the side.</p>
-
-  <div class="placeholder">
-    [Phase 1 placeholder] This is the barebones version of the site, just to confirm
-    GitHub Pages is live and working. The real homepage design, photo, and layout
-    come in Phase 2.
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Open to internships — Fall/Spring</span>
+    <h1>Cybersecurity student building a career in IT &amp; security.</h1>
+    <p class="lede">
+      I'm a junior cybersecurity major studying networking, cloud architecture, and
+      working toward Security+ — with a home lab for hands-on practice. I also produce
+      video content as a side skill, from brand promos to creative edits.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="projects.html">View my projects</a>
+      <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+    </div>
+    <div class="badge-row">
+      <span class="badge">Cybersecurity Major</span>
+      <span class="badge">Security+ In Progress</span>
+      <span class="badge">Home Lab / Networking</span>
+      <span class="badge">Video Production</span>
+    </div>
   </div>
+</section>
 
-  <h2>Quick links</h2>
-  <ul>
-    <li><a href="about.html">About me</a> — school, cybersecurity focus, background</li>
-    <li><a href="projects.html">Projects</a> — creative and technical work</li>
-    <li><a href="services.html">Services</a> — video work available for hire</li>
-    <li><a href="contact.html">Contact</a> — get in touch</li>
-  </ul>
-</main>
+<section class="block">
+  <div class="container">
+    <div class="section-heading">
+      <h2>What I'm focused on</h2>
+      <p>A quick look at where I'm headed and what I bring to the table.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Security &amp; Networking</h3>
+        <p>Coursework in networking and cloud architecture, currently studying for
+        CompTIA Security+, and building a home lab for ethical hacking practice.</p>
+      </div>
+      <div class="card">
+        <h3>Internship-Ready</h3>
+        <p>Actively looking for cybersecurity/IT internships to apply classroom
+        knowledge to real environments.</p>
+      </div>
+      <div class="card">
+        <h3>Creative Video Work</h3>
+        <p>Alongside school, I produce promo videos, visualizers, and brand content —
+        see the Services page for what's available.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer>
-  &copy; 2026 Kenechi Ezeani
+<section class="block alt">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Recent work</h2>
+      <p>A preview of projects — full details on the Projects page.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb">Project Thumbnail</div>
+        <span class="tag">Video</span>
+        <h3>Coffee Shop Promo</h3>
+        <p>A short promo video shot and edited for a local coffee shop.</p>
+        <a class="card-link" href="projects.html">See details →</a>
+      </div>
+      <div class="card">
+        <div class="thumb">Project Thumbnail</div>
+        <span class="tag">Motion Design</span>
+        <h3>"Outskirts" Visualizer</h3>
+        <p>An After Effects music visualizer mixing rotobrushed footage with
+        textured backgrounds.</p>
+        <a class="card-link" href="projects.html">See details →</a>
+      </div>
+      <div class="card">
+        <div class="thumb">Project Thumbnail</div>
+        <span class="tag">Brand</span>
+        <h3>KennVisuals Branding</h3>
+        <p>Creative direction and brand work for my video production page.</p>
+        <a class="card-link" href="projects.html">See details →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kenechi Ezeani</p>
+    <div class="footer-links">
+      <a href="mailto:kenechik06@gmail.com">Email</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
 </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>

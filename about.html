@@ -4,49 +4,82 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Kenechi Ezeani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <a class="brand" href="index.html">Kenechi Ezeani</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">Kenechi Ezeani<small>Cybersecurity &amp; Media</small></a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h1>About Me</h1>
+<section class="block">
+  <div class="container">
+    <div class="section-heading">
+      <h2>About Me</h2>
+      <p>The short version of my background, goals, and what I'm working on.</p>
+    </div>
 
-  <div class="placeholder">
-    [Placeholder headshot photo]
+    <div class="about-layout">
+      <div>
+        <div class="avatar-placeholder">Headshot photo goes here (Phase 3)</div>
+      </div>
+      <div class="about-content">
+        <h2>Background</h2>
+        <p>
+          [Placeholder] I'm a junior cybersecurity major, currently taking networking
+          and cloud architecture courses. I'm studying for my CompTIA Security+
+          certification and building a home lab to get hands-on with network security
+          and ethical hacking. I'm actively looking for cybersecurity/IT internship
+          opportunities where I can apply what I'm learning.
+        </p>
+
+        <h2>Skills &amp; Focus Areas</h2>
+        <ul class="skills-list">
+          <li>Networking Fundamentals</li>
+          <li>Cloud Architecture</li>
+          <li>Security+ (in progress)</li>
+          <li>Home Lab / Ethical Hacking</li>
+          <li>Video Editing</li>
+          <li>Motion Graphics</li>
+        </ul>
+
+        <h2>Outside the Classroom</h2>
+        <p>
+          [Placeholder] I run video production work on the side — see the Services
+          page for what I offer. It's a creative outlet that also sharpens skills
+          like client communication, project management, and attention to detail.
+        </p>
+
+        <h2>Resume</h2>
+        <p><a class="btn btn-secondary" href="#">Download Resume (PDF) — add link</a></p>
+      </div>
+    </div>
   </div>
+</section>
 
-  <h2>Background</h2>
-  <p>
-    [Placeholder] I'm a cybersecurity major, currently a junior focused on networking
-    and cloud architecture coursework. I'm studying for my Security+ certification and
-    building a home lab for hands-on network security and ethical hacking practice.
-    I'm looking for cybersecurity/IT internship opportunities.
-  </p>
-
-  <h2>Outside the classroom</h2>
-  <p>
-    [Placeholder] I also work as a videographer, producing promo videos, visualizers,
-    and creative content — a paid hobby I run alongside school.
-  </p>
-
-  <h2>Resume</h2>
-  <p class="placeholder">[Link to resume PDF goes here]</p>
-</main>
-
-<footer>
-  &copy; 2026 Kenechi Ezeani
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 Kenechi Ezeani</p>
+    <div class="footer-links">
+      <a href="mailto:kenechik06@gmail.com">Email</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
 </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>
